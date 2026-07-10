@@ -261,16 +261,13 @@ footer p {
     height: 44px;
     justify-content: center;
     align-items: center;
+    border-radius: 50%;
+    transition: background-color 0.2s;
 }
 
 .social img {
     width: 28px;
     height: 28px;
-}
-
-.social a {
-    border-radius: 50%;
-    transition: background-color 0.2s;
 }
 
 .social a:hover {
