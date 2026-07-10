@@ -100,11 +100,7 @@ function displayCourses(list) {
 }
 
 function calculateCredits(list) {
-    let total = 0;
-
-    list.forEach((course) => {
-        total += course.credits;
-    });
+    const total = list.reduce((sum, course) => sum + course.credits, 0);
 
     document.querySelector('#credits').textContent = total;
 }
@@ -135,4 +131,3 @@ wddBtn.addEventListener('click', () => {
     displayCourses(wddCourses);
     calculateCredits(wddCourses);
 });
-
