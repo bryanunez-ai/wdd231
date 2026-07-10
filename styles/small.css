@@ -76,7 +76,8 @@ header span {
 
 /****************** NAVIGATION *******************/
 nav {
-    background: var(--grad-primary);
+    background-color: var(--indigo);        /* solid base so contrast tools read a real bg */
+    background-image: var(--grad-primary);  /* gradient painted on top */
 }
 
 #nav-list {
@@ -105,7 +106,7 @@ nav.show #nav-list {
 }
 
 #nav-list a.active {
-    background-color: rgba(255, 255, 255, 0.18);
+    background-color: #2e2a8f;   /* solid highlight (white text = 11:1, passes AA) */
     font-weight: 700;
 }
 
