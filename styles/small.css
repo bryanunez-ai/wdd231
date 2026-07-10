@@ -132,7 +132,8 @@ main h1 {
 }
 
 .section-header {
-    background: var(--grad-primary);
+    background-color: var(--indigo);         /* solid base so contrast tools read a real bg */
+    background-image: var(--grad-primary);   /* gradient painted on top */
 }
 
 .section-title {
