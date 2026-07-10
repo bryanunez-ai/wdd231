@@ -41,11 +41,25 @@
         color: var(--cyan);
     }
 
+    /****************** MAIN *************/
+    .top-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 10px;
+    }
+
     /****************** WEB COURSES SECTION ************************/
+
+    #courses {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 
     #courses-section menu li button {
         width: 100%;
     }
+
+
 
 }
 

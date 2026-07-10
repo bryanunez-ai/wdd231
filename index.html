@@ -27,14 +27,14 @@
     <header>
         <div id="header-container">
             <a href="index.html">
-                <img src="images/logo.svg" alt="WDD 231 Logo" class="logo">
+                <img src="images/logo.svg" alt="WDD 231 Logo" class="logo" width="30" height="30">
             </a>
             <span>Bryan Núñez - WDD 231 Site</span>
             <button id="ham-btn" class="hamburger" aria-label="Menú"></button>
         </div>
         <nav class="nav" id="nav-bar">
             <ul class="nav-list" id="nav-list">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="chamber.html">Chamber Project</a></li>
                 <li><a href="final-project.html">Final Project</a></li>
             </ul>
@@ -43,24 +43,26 @@
     
     <main>
         <h1>Home</h1>
-        <section class="home-section" id="about-me-section">
-            <div class="section-header">
-                <h2 class="section-title">About Me</h2>
-            </div>
-            <div class="section-content">
-                <p>My name is Bryan Núñez, and I am a student in the WDD 231 course. I am passionate about web development and enjoy creating interactive and user-friendly websites.</p>
-                <p>I'm pursuing a degree in Software Development and I'm looking forward to obtaining my first certificate in Web & Computer Programming by the end of this term.</p>
-            </div>
-        </section>
+        <div class="top-container">
+            <section class="home-section" id="about-me-section">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                </div>
+                <div class="section-content">
+                    <p>My name is Bryan Núñez, and I am a student in the WDD 231 course. I am passionate about web development and enjoy creating interactive and user-friendly websites.</p>
+                    <p>I'm pursuing a degree in Software Development and I'm looking forward to obtaining my first certificate in Web & Computer Programming by the end of this term.</p>
+                </div>
+            </section>
 
-        <section class="home-section" id="student-photo-section">
-            <div class="section-header">
-                <h2 class="section-title">Student Photo</h2>
-            </div>
-            <div class="section-content">
-                <img src="images/bryan.png" alt="Photo of Bryan Núñez" class="student-photo">
-            </div>
-        </section>
+            <section class="home-section" id="student-photo-section">
+                <div class="section-header">
+                    <h2 class="section-title">Student Photo</h2>
+                </div>
+                <div class="section-content">
+                    <img src="images/bryan.png" alt="Photo of Bryan Núñez" class="student-photo" width="200" height="200">
+                </div>
+            </section>
+        </div>
 
         <section class="home-section" id="courses-section">
             <div class="section-header">
@@ -80,9 +82,9 @@
 
     <footer>
         <div class="social">
-            <a href="https://www.linkedin.com/in/bryanunez-ai/" target="_blank"><img src="images/linkedin-icon.svg" alt="LinkedIn"></a>
-            <a href="https://github.com/bryanunez-ai/" target="_blank"><img src="images/github-icon.svg" alt="GitHub"></a>
-            <a href="https://www.instagram.com/bryanunez.ai/" target="_blank"><img src="images/instagram-icon.svg" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/in/bryanunez-ai/" target="_blank" rel="noopener"><img src="images/linkedin-icon.svg" alt="LinkedIn" width="32" height="32"></a>
+            <a href="https://github.com/bryanunez-ai/" target="_blank" rel="noopener"><img src="images/github-icon.svg" alt="GitHub" width="32" height="32"></a>
+            <a href="https://www.instagram.com/bryanunez.ai/" target="_blank" rel="noopener"><img src="images/instagram-icon.svg" alt="Instagram" width="32" height="32"></a>
         </div>
         <p id="current-year"></p>
         <p id="last-modified"></p>

@@ -105,6 +105,12 @@ function calculateCredits(list) {
     document.querySelector('#credits').textContent = total;
 }
 
+function setActive(button) {
+    document.querySelectorAll('#courses-section button')
+        .forEach((btn) => btn.classList.remove('active'));
+    button.classList.add('active');
+}
+
 displayCourses(courses);
 calculateCredits(courses);
 
@@ -117,17 +123,22 @@ const allBtn = document.querySelector('#all-filter');
 const wddBtn = document.querySelector('#wdd-filter');
 const cseBtn = document.querySelector('#cse-filter');
 
+setActive(allBtn);
+
 allBtn.addEventListener('click', () => {
     displayCourses(courses);
     calculateCredits(courses);
+    setActive(allBtn);
 });
 
 cseBtn.addEventListener('click', () => {
     displayCourses(cseCourses);
     calculateCredits(cseCourses);
+    setActive(cseBtn);
 });
 
 wddBtn.addEventListener('click', () => {
     displayCourses(wddCourses);
     calculateCredits(wddCourses);
+    setActive(wddBtn);
 });

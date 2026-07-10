@@ -5,4 +5,4 @@ const currentYear = new Date().getFullYear();
 
 
 year.textContent = `©${currentYear} Bryan Núñez | Mérida, Yucatán, México`;
-lastModified.textContent = document.lastModified
+lastModified.textContent = `Last Modified: ${document.lastModified}`;
