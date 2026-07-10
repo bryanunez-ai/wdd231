@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the home page for the WDD 231 course.">
+    <meta name="author" content="Bryan Núñez">
+    <title>WDD 231 - Course Home Page</title>
+
+    <!-- Link to CSS files -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- Link to JS files -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght,MONO@0,300..800,1;1,300..800,1&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div id="header-container">
+            <a href="index.html">
+                <img src="images/logo.svg" alt="WDD 231 Logo" class="logo">
+            </a>
+            <span>Bryan Núñez - WDD 231 Site</span>
+            <button id="ham-btn" class="hamburger" aria-label="Menú"></button>
+        </div>
+        <nav class="nav" id="nav-bar">
+            <ul class="nav-list" id="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="chamber.html">Chamber Project</a></li>
+                <li><a href="final-project.html">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Home</h1>
+        <section class="home-section" id="about-me-section">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="section-content">
+                <p>My name is Bryan Núñez, and I am a student in the WDD 231 course. I am passionate about web development and enjoy creating interactive and user-friendly websites.</p>
+                <p>I'm pursuing a degree in Software Development and I'm looking forward to obtaining my first certificate in Web & Computer Programming by the end of this term.</p>
+            </div>
+        </section>
+
+        <section class="home-section" id="student-photo-section">
+            <div class="section-header">
+                <h2 class="section-title">Student Photo</h2>
+            </div>
+            <div class="section-content">
+                <img src="images/bryan.png" alt="Photo of Bryan Núñez" class="student-photo">
+            </div>
+        </section>
+
+        <section class="home-section" id="courses-section">
+            <div class="section-header">
+                <h2 class="section-title">Web Certificate Courses</h2>
+            </div>
+            <menu>
+                <li><button id="all-filter">All</button></li>
+                <li><button id="cse-filter">CSE</button></li>
+                <li><button id="wdd-filter">WDD</button></li>
+            </menu>
+            <div id="courses">
+                <!-- Courses Added from JS -->
+            </div>
+            <p>The total credits for course listed above is: <span id="credits"></span></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/bryanunez-ai/" target="_blank"><img src="images/linkedin-icon.svg" alt="LinkedIn"></a>
+            <a href="https://github.com/bryanunez-ai/" target="_blank"><img src="images/github-icon.svg" alt="GitHub"></a>
+            <a href="https://www.instagram.com/bryanunez.ai/" target="_blank"><img src="images/instagram-icon.svg" alt="Instagram"></a>
+        </div>
+        <p id="current-year"></p>
+        <p id="last-modified"></p>
+    </footer>
+
+</body>
+</html>
