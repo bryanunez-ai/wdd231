@@ -99,6 +99,40 @@ function displayCourses(list) {
     });
 }
 
-displayCourses(courses);
+function calculateCredits(list) {
+    let total = 0;
 
+    list.forEach((course) => {
+        total += course.credits;
+    });
+
+    document.querySelector('#credits').textContent = total;
+}
+
+displayCourses(courses);
+calculateCredits(courses);
+
+// Filter and display courses by subject
+const wddCourses = courses.filter((course) => course.subject === 'WDD');
+
+const cseCourses = courses.filter((course) => course.subject === 'CSE');
+
+const allBtn = document.querySelector('#all-filter');
+const wddBtn = document.querySelector('#wdd-filter');
+const cseBtn = document.querySelector('#cse-filter');
+
+allBtn.addEventListener('click', () => {
+    displayCourses(courses);
+    calculateCredits(courses);
+});
+
+cseBtn.addEventListener('click', () => {
+    displayCourses(cseCourses);
+    calculateCredits(cseCourses);
+});
+
+wddBtn.addEventListener('click', () => {
+    displayCourses(wddCourses);
+    calculateCredits(wddCourses);
+});
 
