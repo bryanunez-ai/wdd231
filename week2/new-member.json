@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Bryan",
+        "middle-name": "Alexis",
+        "last-name": "Nuñez Alejandre",
+        "age": 28,
+        "birthdate": "03/10/1998",
+        "gender": "Male",
+        "stake": "Chuburná, México",
+        "ward": "Terranova"
+    },
+    {
+        "family_name": "Núñez",
+        "move_in_date": "03/11/2026",
+        "total_family_members": 2,
+        "visited_by_bishopric": true,
+        "family_members": [
+            {
+                "name": "Bryan",
+                "last_name": "Nuñez",
+                "birthdate": "03/10/1998"
+            },
+            {
+                "name": "Yaneli",
+                "last_name": "Quintanilla",
+                "birthdate": "05/31/1999"
+            }
+        ]
+    }
+]
