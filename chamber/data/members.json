@@ -1,0 +1,72 @@
+[
+    {
+        "company-name": "Cancún Shuttle",
+        "tag-line": "Tourist Transportation",
+        "address": "Blvd. Kukulkaan 423, Cancún, Quintana Roo",
+        "phone": 9988000111,
+        "website": "www.cancunshuttle.com",
+        "email": "hi@cancunshuttle.com",
+        "image-path": "images/cancun-shuttle.jpg",
+        "membership-level": 1
+    },
+    {
+        "company-name": "Acento Desarrollos",
+        "tag-line": "Real Estate Agency",
+        "address": "Calle 60 no. 350, Centro, Mérida, Yucatán",
+        "phone": 9992001234,
+        "website": "www.acentodesarrollos.com",
+        "email": "contacto@acentodesarrollos.com",
+        "image-path": "images/acento-desarrollos.jpg",
+        "membership-level": 2
+    },
+    {
+        "company-name": "Autoprogreso",
+        "tag-line": "Passenger Bus Service",
+        "address": "Calle 62 no. 524, Centro, Mérida, Yucatán",
+        "phone": 9999240100,
+        "website": "www.autoprogreso.com",
+        "email": "info@autoprogreso.com",
+        "image-path": "images/autoprogreso.png",
+        "membership-level": 3
+    },
+    {
+        "company-name": "Grupo RH",
+        "tag-line": "Real Estate Group",
+        "address": "Av. Itzáes 200, García Ginerés, Mérida, Yucatán",
+        "phone": 9993105566,
+        "website": "www.gruporh.com",
+        "email": "hola@gruporh.com",
+        "image-path": "images/grupo-rh.jpg",
+        "membership-level": 1
+    },
+    {
+        "company-name": "Hacienda Yaxnic",
+        "tag-line": "Events & Hospitality",
+        "address": "Carretera Mérida-Motul Km 12, Yaxnic, Yucatán",
+        "phone": 9997778899,
+        "website": "www.haciendayaxnic.com",
+        "email": "eventos@haciendayaxnic.com",
+        "image-path": "images/hacienda-yaxnic.jpg",
+        "membership-level": 3
+    },
+    {
+        "company-name": "Itzimná Real Estate",
+        "tag-line": "Real Estate Agency",
+        "address": "Calle 21 no. 190, Itzimná, Mérida, Yucatán",
+        "phone": 9994412200,
+        "website": "www.itzimnarealestate.com",
+        "email": "ventas@itzimnarealestate.com",
+        "image-path": "images/itzimna-real-estate.jpg",
+        "membership-level": 2
+    },
+    {
+        "company-name": "Cenote Suytún",
+        "tag-line": "Tourist Attraction",
+        "address": "Carretera Valladolid-Tizimín Km 8, Valladolid, Yucatán",
+        "phone": 9856221199,
+        "website": "www.cenotesuytun.com",
+        "email": "reservas@cenotesuytun.com",
+        "image-path": "images/cenote-suytun.jpg",
+        "membership-level": 2
+    }
+]
