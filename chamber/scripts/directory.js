@@ -53,7 +53,7 @@ function displayMembers(members) {
             <h2>${member['company-name']}</h2>
             <p class="buss-tag">${member['tag-line']}</p>
             <div class="member-data-container">
-                <img src="${member['image-path']}" alt="Business Image">
+                <img src="${member['image-path']}" alt="Business Image" loading="lazy">
                 <div class="member-info">
                     <p><strong>Email: </strong><span><a href="mailto:${member.email}">${member.email}</a></span></p>
                     <p><strong>Phone: </strong><span><a href="tel:${member.phone}">${member.phone}</a></span></p>
