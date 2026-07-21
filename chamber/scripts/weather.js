@@ -22,17 +22,16 @@ function displayWeather(data) {
     const humidity = document.querySelector('#humidity');
     const feelsLike = document.querySelector('#feels-like');
     const windSpeed = document.querySelector('#wind');
-    const weatherIcon = document.querySelector('#weather-icon');
-    const captionDesc = document.querySelector('figcaption');
-
+    const weatherFigure = document.querySelector('#weather-figure');
 
     currentTemp.textContent = data.main.temp;
     humidity.textContent = `${data.main.humidity}%`;
     windSpeed.textContent = `${data.wind.speed} mph`;
     feelsLike.textContent = `${data.main.feels_like} °F`;
-    weatherIcon.setAttribute('src', `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`);
-    weatherIcon.setAttribute('alt', `${data.weather[0].description} icon`);
-    captionDesc.textContent = data.weather[0].description;
+    weatherFigure.innerHTML = `
+        <img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="${data.weather[0].description} icon" class="weather-icon">
+        <figcaption>${data.weather[0].description}</figcaption>
+    `;
 }
 
 // Forecast
