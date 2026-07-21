@@ -1,10 +1,10 @@
 :root {
-    --pacific-blue: #2bb8c6;
-    --rusty-spice: #be2e04;
-    --sea-green: #00884b;
-    --antique-white: #f4e5d1;
-    --rich-mahogany: #4e1009;
-    --card-bg: #fffaf2;
+    --pacific-blue: #e6c778;    /* header bar + footer accent (soft gold) */
+    --rusty-spice: #1f4e79;     /* headings + primary buttons (corporate blue) */
+    --sea-green: #2e6c7e;       /* links + labels (steel teal) */
+    --antique-white: #eef1f6;   /* page background (cool light gray) */
+    --rich-mahogany: #16233c;   /* text + dark surfaces (deep navy) */
+    --card-bg: #ffffff;         /* card surfaces (white) */
 
     --heading-font: "Cinzel", serif;
     --label-font: "Raleway", sans-serif;

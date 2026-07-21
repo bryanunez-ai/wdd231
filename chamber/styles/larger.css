@@ -98,5 +98,31 @@
         opacity: 0.7;
     }
 
+    /********************************** HOME PAGE  *****************************/
+    .header-container {
+        max-width: 36%;
+        text-align: left;
+        padding: var(--spacing)
+    }
 
+    .header-container button {
+        align-self: flex-start;
+    }
+
+    /**** EVENTS ****/
+    .event-card {
+        flex: 0 0 calc((100% - 2rem) / 3);
+    }
+
+    /**** WEATHER  ****/
+    .weather-layout {
+        grid-template-columns: 1fr 2fr;
+        align-items: start;
+        gap: 2rem;
+    }
+
+    #forecast-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
 }

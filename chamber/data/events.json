@@ -1,0 +1,58 @@
+[
+    {
+        "title": "Webinar: Webinar: How to Grow Your Business",
+        "date": "08/23/2026",
+        "time": "18:00",
+        "isOnline": true,
+        "location": "Online"
+    },
+    {
+        "title": "Course: Automate With AI",
+        "date": "08/29/2026",
+        "time": "10:00",
+        "isOnline": false,
+        "location": "Av. Itzaes 273, Mérida, Yucatán"
+    },
+    {
+        "title": "Expo: B2B Providers",
+        "date": "09/02/2026",
+        "time": "17:00",
+        "isOnline": false,
+        "location": "Av. Itzaes 273, Mérida, Yucatán"
+    },
+    {
+        "title": "Networking Breakfast: Local Entrepreneurs",
+        "date": "09/10/2026",
+        "time": "08:00",
+        "isOnline": false,
+        "location": "Hotel Presidente InterContinental, Mérida"
+    },
+    {
+        "title": "Workshop: Digital Marketing for SMBs",
+        "date": "09/15/2026",
+        "time": "16:00",
+        "isOnline": true,
+        "location": "Online"
+    },
+    {
+        "title": "Panel: Sustainable Business Practices",
+        "date": "09/22/2026",
+        "time": "18:30",
+        "isOnline": false,
+        "location": "Centro de Convenciones Yucatán Siglo XXI"
+    },
+    {
+        "title": "Seminar: Financing & Grants for Startups",
+        "date": "09/28/2026",
+        "time": "11:00",
+        "isOnline": true,
+        "location": "Online"
+    },
+    {
+        "title": "Gala: Annual Chamber Awards Night",
+        "date": "10/03/2026",
+        "time": "20:00",
+        "isOnline": false,
+        "location": "Quinta Montes Molina, Paseo de Montejo"
+    }
+]

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Connect with a local network of entrepeneurs and businesses in Península that are continuously growing and enhancing the local economy.">
+    <meta name="author" content="Bryan Núñez">
+    <title>Home | Península Chamber of Commerce</title>
+    <link rel="icon" href="favicon.ico"> <!-- Link to favicon -->
+
+    <!-- Social Media Meta tags -->
+    <meta property="og:title" content="Península Chamber of Commerce">
+    <meta property="og:description" content="Connect with a local network of entrepeneurs and businesses in Península that are continuously growing and enhancing the local economy.">
+    <meta property="og:image" content="https://bryanunez-ai.github.io/wdd231/chamber/images/chamber-logo.png">
+    <meta property="og:url" content="https://bryanunez-ai.github.io/wdd231/chamber/">
+
+    <!-- Link to CSS files -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+
+    <!-- Link to JS files -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/events.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+    <script src="scripts/hero.js" defer></script>
+    
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght,MONO@0,300..800,1;1,300..800,1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="menu-container">
+            <a href="index.html">
+                <img src="images/chamber-logo.png" alt="Península Chamber of Commerce's logo" id="logo">
+                <span>Península Chamber of Commerce</span>
+            </a>
+            <nav>
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                </ul>
+            </nav>
+            <div class="theme-container">
+                <button id="theme-btn" aria-label="Toggle dark mode"></button>
+                <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle menu"></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="images/hero/1.webp" alt="" class="slide active">
+            <img src="images/hero/2.webp" alt="" class="slide">
+            <img src="images/hero/3.webp" alt="" class="slide">
+            <img src="images/hero/4.webp" alt="" class="slide">
+            <img src="images/hero/5.webp" alt="" class="slide">
+            <div class="header-container">
+                <h1>Connect With Local Businesses and Stratetic Partners</h1>
+                <a href="join.html" class="button">Join</a>
+            </div>
+        </section>
+       <section class="events">
+            <h2>Events</h2>
+            <div class="layout-container">
+                <div class="events-controls grid-list-btn-container">
+                    <button id="events-prev" aria-label="Previous events" class="btn"><span aria-hidden="true">‹</span></button>
+                    <button id="events-next" aria-label="Next events" class="btn"><span aria-hidden="true">›</span></button>
+                </div>
+                <div id="events-container">
+                    <!-- Added with JS from JSON -->
+                </div>
+            </div>
+       </section>
+       <section class="weather">
+                <h2>Weather</h2>
+                <div class="layout-container weather-layout">
+                    <div class="weather-today">
+                        <h3>Today's Weather</h3>
+                        <div class="weather-container">
+                            <figure>
+                                <img id="weather-icon" src="" alt="" class="weather-icon">
+                                <figcaption></figcaption>
+                            </figure>
+                            <div class="weather-info">
+                                <p class="today-temp"><span id="current-temp"></span> °F</p>
+                                <p><strong>Feels Like:</strong> <span id="feels-like"></span></p>
+                                <p><strong>Humidity:</strong> <span id="humidity"></span></p>
+                                <p><strong>Wind:</strong> <span id="wind"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="weather-forecast">
+                        <h3>Forecast</h3>
+                        <div id="forecast-container">
+                        </div>
+                    </div>
+                </div>
+        </section>
+       
+        <section class="spotlight">
+            <h2>Spotlight Members</h2>
+            <div class="layout-container">
+                <div id="members-container">
+                    <!-- Added with JS from JSON -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+    <div class="info">
+        <!-- <p><strong>Península Chamber of Commerce</strong></p> -->
+        <h2>Península Chamber of Commerce</h2>
+        <p>Paseo de Montejo 495, Zona Paseo de Montejo</p>
+        <p>Mérida, Yucatán, México</p>
+        <p>CP 97000</p>
+        <a href="mailto:hola@peninsulachamber.org"><p>hola@peninsulachamber.org</p></a>
+        <a href="tel:+529998887777"><p>999 888 7777</p></a>
+    </div>
+    <div class="social">
+        <p class="footer-label">Follow us</p>
+        <div class="social-icons">
+            <img src="images/youtube-icon.svg" alt="Youtube Icon">
+            <img src="images/twitter-icon.svg" alt="X (Twitter) Icon">
+            <img src="images/linkedin-icon.svg" alt="Linked In Icon">
+        </div>
+    </div>
+    <div class="attribution">
+        <p>WDD 231 Class Project</p>
+        <p>Bryan Núñez</p>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Península Chamber of Commerce &middot; Last Modification: <span id="last-modified"></span></p>
+    </div>
+    </footer>
+</body>
+</html>
