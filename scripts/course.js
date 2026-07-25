@@ -5,7 +5,7 @@ const courses = [
         title: 'Introduction to Programming',
         credits: 2,
         certificate: 'Web and Computer Programming',
-        description: 'This course will introduce students to programming. It will introduce the building blocks of programming languages (variables, decisions, calculations, loops, array, and input/output) and use them to solve problems.',
+        description: 'This course introduces students to programming. It introduces the building blocks of programming languages (variables, decisions, calculations, loops, array, and input/output) and use them to solve problems.',
         technology: [
             'Python'
         ],
@@ -42,7 +42,7 @@ const courses = [
         title: 'Programming with Classes',
         credits: 2,
         certificate: 'Web and Computer Programming',
-        description: 'This course will introduce the notion of classes and objects. It will present encapsulation at a conceptual level. It will also work with inheritance and polymorphism.',
+        description: 'This course introduces the notion of classes and objects. It presents encapsulation at a conceptual level. It will also work with inheritance and polymorphism.',
         technology: [
             'C#'
         ],
@@ -68,7 +68,7 @@ const courses = [
         title: 'Frontend Web Development I',
         credits: 2,
         certificate: 'Web and Computer Programming',
-        description: 'This course builds on prior experience with Dynamic Web Fundamentals and programming. Students will focus on user experience, accessibility, compliance, performance optimization, and basic API usage.',
+        description: 'This course builds on prior experience with Dynamic Web Fundamentals and programming. Students focus on user experience, accessibility, compliance, performance optimization, and basic API usage.',
         technology: [
             'HTML',
             'CSS',
@@ -87,6 +87,10 @@ function displayCourses(list) {
         const card = document.createElement('div');
         card.classList.add('course-card');
 
+        card.addEventListener('click', () => {
+            openModal(course);
+        });
+        
         if (course.completed) {
             card.classList.add('completed');
             card.textContent = `✅ ${course.subject} ${course.number}`;
@@ -96,7 +100,34 @@ function displayCourses(list) {
         }
 
         coursesElmnt.appendChild(card);
+
     });
+}
+
+// Modals
+function openModal(course) {
+    const modal = document.querySelector('#course-details');
+
+    modal.innerHTML = `
+        <button id="close-modal" >×</button>
+        <h2>${course.title}</h2>
+        <p>${course.description}</p>
+        <p><strong>Certificate:</strong> ${course.certificate}</p>
+        <p><strong>Technology:</strong> ${course.technology.join(', ')}</p>
+        <p><strong>Credits:</strong> ${course.credits}</p>
+    `;
+    modal.showModal();
+
+    const closeModal = document.querySelector('#close-modal').addEventListener('click', () => {
+        modal.close();
+    });
+    
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.close();
+        }
+    });
+
 }
 
 function calculateCredits(list) {

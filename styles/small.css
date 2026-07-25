@@ -227,6 +227,7 @@ main h1 {
     padding: 14px;
     text-align: center;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .course-card.completed {
@@ -274,4 +275,42 @@ footer p {
 
 .social a:hover {
     background-color: rgba(28, 23, 121, 0.12);   /* subtle indigo tint circle */
+}
+
+dialog {
+  border: 1px solid rgb(0 0 0 / 10%);
+  border-radius: .25rem;
+  padding: 1rem;
+  background-color: var(--card-bg);
+  box-shadow: 0 0 3rem #777;
+  width: 90%;
+  max-width: 600px;
+}
+
+::backdrop {
+  background-color: rgb(0 0 0 / 50%);
+}
+
+dialog button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: .2rem .8rem;
+  border: var(--card-bg);
+  background-color: var(--card-bg);
+  color: var(--indigo);
+  font-weight: 600;
+  font-size: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
+}
+
+dialog button:focus-visible {
+    outline: none;   /* bonito, solo para teclado */
+}
+
+
+::backdrop {
+    background-color: transparent;
 }
