@@ -630,3 +630,164 @@ footer a {
 .spotlight {
     padding: var(--spacing);
 }
+
+/*************** JOIN  **************/
+
+#join-main {
+    margin: var(--spacing);
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--card-bg);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    /* margin-bottom: var(--spacing); */
+    padding: var(--spacing);
+    gap: 20px;
+    animation: fadeInUp 0.6s ease-out;
+}
+
+form h2,
+.form-field {
+    width: 90%;
+    max-width: 400px;
+}
+
+form h2 {
+    align-self: center;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-family: var(--heading-font);
+    font-size: 1.1rem;
+}
+
+form input:not([type="submit"]),
+form textarea,
+form select {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid var(--navy-deep);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    padding: 8px;
+    font-size: 0.9rem;
+    font-family: var(--body-font);
+}
+
+form textarea {
+    min-height: 5rem;
+    resize: vertical;
+}
+
+#form-btn {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Memberships */
+.membership-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: var(--spacing);
+    padding: var(--spacing);
+    gap: 20px;
+}
+
+.membership-card {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 400px;
+    align-items: center;
+    animation: fadeInUp 0.6s ease-out;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.membership-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.membership-card button {
+    margin: 0 auto;
+}
+
+.membership-cards h2 {
+    margin-bottom: 0;
+}
+
+/* Membership modal */
+#membership-modal {
+    padding: 0;
+    border: none;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 420px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+#membership-modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    position: relative;
+    padding: 1.5rem;
+}
+
+.modal-content h3 {
+    color: var(--navy);
+    margin-top: 0;
+}
+
+.close-button {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--navy);
+    color: var(--text-on-dark);
+    font-size: 1.1rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.close-button:focus-visible {
+    outline: 2px solid var(--gold);
+}
+
+#results {
+    grid-column: 1 / -1;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);   /* empieza 20px abajo e invisible */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);       /* termina en su lugar y visible */
+    }
+}

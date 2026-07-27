@@ -125,4 +125,35 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
     }
+
+    /***************** JOIN *******************/
+    #join-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+        gap: 0.5rem 2rem;
+    }
+
+    #join-main h1:first-of-type, #join-main p:first-of-type {
+        grid-column: 1 / -1;
+    }
+
+    .membership-cards {
+        margin: 0;
+        align-items: start;
+    }
+
+    .membership-cards h2 {
+        width: 100%;
+    }
+
+    .membership-card {
+        width: 100%;
+        max-width: auto;
+        align-items: start;
+    }
+
+    .membership-card button {
+        margin: 0;
+    }
 }

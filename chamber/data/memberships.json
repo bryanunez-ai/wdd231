@@ -1,0 +1,66 @@
+[
+    {
+        "title": "NP",
+        "level": "np",
+        "description": "For non-profit organizations. Join our community and connect with local businesses at no cost.",
+        "benefits": [
+            "Free membership",
+            "Listing in the online business directory",
+            "Monthly chamber newsletter",
+            "Access to community networking events"
+        ],
+        "price": {
+            "isFree": true
+        }
+    },
+    {
+        "title": "Bronze",
+        "level": "bronze",
+        "description": "A great start for small businesses that want to grow with training and savings.",
+        "benefits": [
+            "Everything in NP Membership",
+            "Discounts on chamber events",
+            "Access to monthly training workshops",
+            "Member-to-member special offers"
+        ],
+        "price": {
+            "isFree": false,
+            "Monthly": 7,
+            "Yearly": 50
+        }
+    },
+    {
+        "title": "Silver",
+        "level": "silver",
+        "description": "More visibility and bigger savings for growing businesses.",
+        "benefits": [
+            "Everything in Bronze Membership",
+            "Featured in the monthly newsletter",
+            "Larger discounts on events and training",
+            "Priority registration for workshops",
+            "One free event ticket per year"
+        ],
+        "price": {
+            "isFree": false,
+            "Monthly": 10,
+            "Yearly": 100
+        }
+    },
+    {
+        "title": "Gold",
+        "level": "gold",
+        "description": "Maximum exposure and premium benefits for established businesses.",
+        "benefits": [
+            "Everything in Silver Membership",
+            "Home page spotlight advertising",
+            "Free booth at the annual business expo",
+            "VIP access to exclusive events",
+            "Dedicated account representative"
+        ],
+        "price": {
+            "isFree": false,
+            "Monthly": 14,
+            "Yearly": 150
+        }
+    }
+]

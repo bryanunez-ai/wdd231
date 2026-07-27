@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Connect with a local network of entrepeneurs and businesses in Península that are continuously growing and enhancing the local economy.">
+    <meta name="author" content="Bryan Núñez">
+    <title>Join | Península Chamber of Commerce</title>
+    <link rel="icon" href="favicon.ico"> <!-- Link to favicon -->
+
+    <!-- Social Media Meta tags -->
+    <meta property="og:title" content="Península Chamber of Commerce">
+    <meta property="og:description" content="Connect with a local network of entrepeneurs and businesses in Península that are continuously growing and enhancing the local economy.">
+    <meta property="og:image" content="https://bryanunez-ai.github.io/wdd231/chamber/images/chamber-logo.png">
+    <meta property="og:url" content="https://bryanunez-ai.github.io/wdd231/chamber/">
+
+    <!-- Link to CSS files -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+
+    <!-- Link to JS files -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/join-modals.js" defer></script>
+    
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght,MONO@0,300..800,1;1,300..800,1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="menu-container">
+            <a href="index.html">
+                <img src="images/chamber-logo.png" alt="Península Chamber of Commerce's logo" id="logo">
+                <span>Península Chamber of Commerce</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li class="active"><a href="join.html">Join</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                </ul>
+            </nav>
+            <div class="theme-container">
+                <button id="theme-btn" aria-label="Toggle dark mode"></button>
+                <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle menu"></button>
+            </div>
+        </div>
+    </header>
+    <main id="join-main">
+        <h1>Join Península Chamber of Commerce</h1>
+        <p>Complete the form and we'll get in touch with you with next steps to join us.</p>
+        
+        <form method="GET" action="thankyou.html" class="form">
+            <h2>Personal Information</h2>
+            <div class="form-field">
+                <label for="first">First Name
+                    <input type="text" name="first" required autocomplete="given-name" title="Your First Name" id="first">
+                </label>
+            </div>
+
+            <div class="form-field">
+                <label for="last">Last Name
+                    <input type="text" name="last" required autocomplete="family-name" title="Your Last Name" id="last">
+                </label>
+            </div>
+
+            <h2>Company Information</h2>
+            <div class="form-field">
+                <label for="company">Company
+                    <input type="text" name="company" required autocomplete="organization" title="Your Company's Name" id="company">
+                </label>
+            </div>
+
+            <div class="form-field">
+                <label for="title">Title
+                    <input id="title" name="title" type="text" required autocomplete="organization-title" pattern="[A-Za-z\- ]{7,}" title="At least 7 letters, hyphens or spaces">
+                </label>
+            </div>
+
+            <div class="form-field">
+                <label>Business Description
+                    <textarea name="description" title="Describe your business"></textarea>
+                </label>
+            </div>
+
+            <div class="form-field">
+                <label for="email">Email
+                    <input type="email" name="email" required autocomplete="email" title="Your Email Address" id="email" placeholder="you@example.com">
+                </label>
+            </div>
+
+            <div class="form-field">
+                <label for="phone">Phone
+                    <input type="tel" name="phone" required autocomplete="tel" title="Phone Number" id="phone">
+                </label>
+            </div>
+
+            <div class="form-field">
+                <label for="membership">Membership Level
+                    <select name="membership" id="membership" required title="Choose a membership level">
+                        <option value="" disabled selected>Select a level…</option>
+                        <option value="np">NP Membership (Non-Profit)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+                <input type="hidden" name="timestamp" id="timestamp">
+            </div>
+
+            <div class="form-field">
+                <input type="submit" value="Join" class="button" id="form-btn">
+            </div>
+        </form>
+
+        <section class="membership-cards">
+            <h2>Our Memberships</h2>
+            <div class="membership-card">
+                <h3>NP Membership</h3>
+                <p>Non-profit organizations · Free</p>
+                <button class="button open-button" data-level="np">Learn more</button>
+            </div>
+
+            <div class="membership-card">
+                <h3>Bronze Membership</h3>
+                <p>Monthly · $7 USD</p>
+                <p>Yearly · $50 USD</p>
+                <button class="button open-button" data-level="bronze">Learn more</button>
+            </div>
+
+            <div class="membership-card">
+                <h3>Silver Membership</h3>
+                <p>Monthly · $10 USD</p>
+                <p>Yearly · $100 USD</p>
+                <button class="button open-button" data-level="silver">Learn more</button>
+            </div>
+
+            <div class="membership-card">
+                <h3>Gold Membership</h3>
+                <p>Monthly · $14 USD</p>
+                <p>Yearly · $150 USD</p>
+                <button class="button open-button" data-level="gold">Learn more</button>
+            </div>
+        </section>
+        <dialog class="modal" id="membership-modal" popover>
+    
+        </dialog>
+    </main>
+    <footer>
+    <div class="info">
+        <!-- <p><strong>Península Chamber of Commerce</strong></p> -->
+        <h2>Península Chamber of Commerce</h2>
+        <p>Paseo de Montejo 495, Zona Paseo de Montejo</p>
+        <p>Mérida, Yucatán, México</p>
+        <p>CP 97000</p>
+        <a href="mailto:hola@peninsulachamber.org"><p>hola@peninsulachamber.org</p></a>
+        <a href="tel:+529998887777"><p>999 888 7777</p></a>
+    </div>
+    <div class="social">
+        <p class="footer-label">Follow us</p>
+        <div class="social-icons">
+            <img src="images/youtube-icon.svg" alt="Youtube Icon">
+            <img src="images/twitter-icon.svg" alt="X (Twitter) Icon">
+            <img src="images/linkedin-icon.svg" alt="Linked In Icon">
+        </div>
+    </div>
+    <div class="attribution">
+        <p>WDD 231 Class Project</p>
+        <p>Bryan Núñez</p>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Península Chamber of Commerce &middot; Last Modification: <span id="last-modified"></span></p>
+    </div>
+    </footer>
+</body>
+</html>
