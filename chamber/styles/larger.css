@@ -149,7 +149,7 @@
 
     .membership-card {
         width: 100%;
-        max-width: auto;
+        max-width: none;
         align-items: start;
     }
 
