@@ -156,4 +156,35 @@
     .membership-card button {
         margin: 0;
     }
+
+}
+
+@media only screen and (min-width:64rem) {
+    .place {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "photo"
+            "name"
+            "description"
+            "address"
+            "button";
+    }
+
+    .place figure img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .place button {
+        margin: var(--spacing) auto;
+    }
+
+    .discover-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "one   one   two   three"
+            "four  five  six   six"
+            "seven seven eight eight";
+    }
 }

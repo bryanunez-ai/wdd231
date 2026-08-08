@@ -39,7 +39,7 @@ body {
 h1 {
     font-family: var(--heading-font);
     color: var(--rusty-spice);
-    margin: 0 0 .4rem;
+    margin: var(--spacing);
     font-size: clamp(1.8rem, 4vw, 2.8rem);
     letter-spacing: 1px;
 }
@@ -789,4 +789,82 @@ form textarea {
         opacity: 1;
         transform: translateY(0);       /* termina en su lugar y visible */
     }
+}
+
+.place {
+    display: grid;
+    grid-template-areas: 
+        "photo"
+        "name"
+        "description"
+        "address"
+        "button";
+    border: 1px solid var(--navy-deep);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.place h2 { 
+    grid-area: name;
+    margin-bottom: 0;
+    padding: 8px;
+}
+
+.place figure {
+    grid-area: photo;
+    margin: 0;
+}
+
+.place figure img {
+    width: 100%;
+}
+
+.place address {
+    grid-area: address;
+    padding: 0 8px;
+}
+
+.place p {
+    grid-area: description;
+    padding: 0 8px;
+}
+
+.place button {
+    grid-area: button;
+    width: 150px;
+    margin: var(--spacing) auto;
+}
+
+.place:nth-child(1) { grid-area: one; }
+.place:nth-child(2) { grid-area: two; }
+.place:nth-child(3) { grid-area: three; }
+.place:nth-child(4) { grid-area: four; }
+.place:nth-child(5) { grid-area: five; }
+.place:nth-child(6) { grid-area: six; }
+.place:nth-child(7) { grid-area: seven; }
+.place:nth-child(8) { grid-area: eight; }
+
+.discover-grid {
+    display: grid;
+    margin: var(--spacing);
+    gap: var(--spacing);
+    grid-template-areas:
+        "one"
+        "two"
+        "three"
+        "four"
+        "five"
+        "six"
+        "seven"
+        "eight";
+}
+
+.visitor-message {
+    background-color: var(--surface);
+    color: var(--text);
+    border-left: 4px solid var(--gold);
+    border-radius: 8px;
+    margin: var(--spacing);
+    padding: var(--spacing);
+    font-weight: 600;
 }
