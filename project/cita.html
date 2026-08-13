@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Agenda tu cita con la psicóloga Yaneli Quintanilla. Terapia individual, de pareja y para adolescentes, en modalidad online o presencial.">
+    <meta name="author" content="Bryan Núñez">
+    <title>Agendar Cita | Psicóloga Yaneli Quintanilla</title>
+
+    <!-- Social Media Meta tags -->
+    <meta property="og:title" content="Agendar Cita | Psicóloga Yaneli Quintanilla">
+    <meta property="og:description" content="Agenda tu sesión de terapia online o presencial con Yaneli Quintanilla.">
+    <meta property="og:image" content="https://bryanunez-ai.github.io/wdd231/project/images/logo.png">
+    <meta property="og:url" content="https://bryanunez-ai.github.io/wdd231/project/cita.html">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JS -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="menu-container">
+            <a href="index.html" class="brand">
+                <img src="images/logo.png" alt="Logo de Yaneli Quintanilla" id="logo" width="60" height="60">
+                <span>Psicóloga Yaneli Quintanilla</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="articulos.html">Artículos</a></li>
+                    <li class="active"><a href="cita.html">Agendar Cita</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger-btn" id="hamburger-btn" aria-label="Abrir menú"></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="appointment">
+            <h1>Agendar Cita</h1>
+            <p class="intro">Da el primer paso hacia tu bienestar. Completa el formulario y te contactaré para confirmar tu sesión.</p>
+
+            <div class="appointment-layout">
+                <div class="appointment-info">
+                    <h2>¿Cómo funciona?</h2>
+                    <ol>
+                        <li>Elige el servicio y la modalidad que prefieras.</li>
+                        <li>Completa el formulario con tus datos.</li>
+                        <li>Te contactaré en menos de 24 horas para confirmar fecha y hora.</li>
+                    </ol>
+
+                    <h2>Modalidades</h2>
+                    <p><strong>Online:</strong> sesiones por videollamada desde donde estés.</p>
+                    <p><strong>Presencial:</strong> en el consultorio en Mérida, Yucatán.</p>
+                </div>
+
+                <form action="gracias.html" method="get" class="appointment-form">
+                    <label>Nombre
+                        <input type="text" name="nombre" autocomplete="given-name" required>
+                    </label>
+                    <label>Apellido
+                        <input type="text" name="apellido" autocomplete="family-name" required>
+                    </label>
+                    <label>Correo electrónico
+                        <input type="email" name="correo" autocomplete="email" required>
+                    </label>
+                    <label>Teléfono
+                        <input type="tel" name="telefono" autocomplete="tel" pattern="[0-9\s()+-]{7,}">
+                    </label>
+                    <label>Servicio
+                        <select name="servicio" required>
+                            <option value="">Selecciona...</option>
+                            <option value="Terapia Individual">Terapia Individual</option>
+                            <option value="Terapia de Pareja">Terapia de Pareja</option>
+                            <option value="Terapia para Adolescentes">Terapia para Adolescentes</option>
+                        </select>
+                    </label>
+                    <label>Modalidad
+                        <select name="modalidad" required>
+                            <option value="">Selecciona...</option>
+                            <option value="Online">Online</option>
+                            <option value="Presencial">Presencial</option>
+                        </select>
+                    </label>
+                    <label>Fecha preferida
+                        <input type="date" name="fecha" required>
+                    </label>
+                    <label>Mensaje (opcional)
+                        <textarea name="mensaje" rows="4"></textarea>
+                    </label>
+                    <input type="hidden" name="timestamp">
+                    <button type="submit" class="button">Enviar solicitud</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <h2>Psicóloga Yaneli Quintanilla</h2>
+            <p>Psicóloga Clínica y Educacional</p>
+            <p>Terapia Cognitivo Conductual (TCC) y Terapia de Aceptación y Compromiso (ACT)</p>
+        </div>
+
+        <div class="footer-contact">
+            <h2>Contacto</h2>
+            <address>
+                <a href="mailto:hola@psicoyane.com">hola@psicoyane.com</a>
+                <a href="tel:+529990000000">+52 999 000 0000</a>
+            </address>
+        </div>
+
+        <div class="footer-social">
+            <h2>Redes</h2>
+            <a href="https://instagram.com/">Instagram</a>
+            <a href="https://facebook.com/">Facebook</a>
+            <a href="https://linkedin.com/">LinkedIn</a>
+        </div>
+
+        <div class="footer-links">
+            <a href="attributions.html">Atribuciones</a>
+            <a href="#">Video</a>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Yaneli Quintanilla. Todos los derechos reservados. &middot; Última modificación: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

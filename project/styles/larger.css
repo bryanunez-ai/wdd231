@@ -1,0 +1,98 @@
+/* ============================================================
+   LARGER SCREENS (tablet / desktop)
+   ============================================================ */
+
+@media only screen and (min-width: 48rem) {
+
+    /* ---------------- NAV: horizontal with Flex ---------------- */
+    .hamburger-btn {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: var(--slate-dark);
+        padding: 0.4rem 0.2rem;
+        border-bottom: 3px solid transparent;
+    }
+
+    nav li.active a,
+    nav a:hover {
+        border-bottom-color: var(--sage);
+    }
+
+    /* ---------------- Spacing on bigger screens ---------------- */
+    main section {
+        padding: 3.5rem 2rem;
+    }
+
+    .hero {
+        padding: 5rem 2rem;
+    }
+
+    /* ---------------- Sobre Mí: highlights in a row ---------------- */
+    .highlights {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 2.5rem;
+    }
+
+    /* ---------------- Services & Resources: 3-col grid ---------------- */
+    .service-cards,
+    .resource-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    /* ---------------- Footer: columns ---------------- */
+    footer {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr auto;
+        gap: 1.5rem 2rem;
+        padding: 3rem 2rem 1rem;
+    }
+
+    footer h2 {
+        margin-top: 0;
+    }
+
+    .footer-bottom {
+        grid-column: 1 / -1;
+    }
+
+    /* ---------------- Blog grid ---------------- */
+    #blog-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 1.5rem;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    /* ---------------- Cita: 2 columnas ---------------- */
+    .appointment-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5rem;
+        align-items: start;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}

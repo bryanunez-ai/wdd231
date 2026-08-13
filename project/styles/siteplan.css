@@ -1,0 +1,55 @@
+/* Styles specific to the Site Plan document (planning/siteplan.html) */
+
+main {
+    margin: 0 auto;
+    max-width: 700px;
+    padding: 16px;
+}
+
+h2 {
+    border-bottom: 2px solid var(--slate);
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-radius: 10px;
+    table-layout: fixed;
+    background-color: var(--surface);
+}
+
+th, td, caption {
+    border: 1px solid var(--text);
+    padding: 12px;
+    vertical-align: middle;
+}
+
+th {
+    background-color: var(--sage);
+}
+
+.swatch {
+    width: 60px;
+}
+
+#slate .swatch { background-color: var(--slate); }
+#sage .swatch  { background-color: var(--sage); }
+#ivory .swatch { background-color: var(--ivory); }
+#white .swatch { background-color: #ffffff; }
+#text .swatch  { background-color: var(--text); }
+
+figure {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 700px;
+}
+
+figcaption {
+    margin-bottom: 16px;
+}
+
+figure img {
+    width: 70%;
+    max-width: 400px;
+    margin: 0 auto;
+}
