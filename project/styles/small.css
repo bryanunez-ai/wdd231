@@ -392,6 +392,10 @@ footer a:hover {
 /* ============================================================
    BLOG (articulos.html)
    ============================================================ */
+.blog h1 {
+    text-align: center;
+}
+
 .blog-intro {
     text-align: center;
     max-width: 55ch;
