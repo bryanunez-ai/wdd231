@@ -194,14 +194,13 @@ main section > h2 {
     color: var(--slate-dark);
 }
 
-.highlights svg {
+.highlights img {
     width: 110px;
     height: 110px;
     padding: 28px;
     box-sizing: border-box;
     border-radius: 50%;
     background-color: var(--sage);
-    color: var(--slate-dark);
 }
 
 /* ---------------- CARDS (services + resources) ---------------- */
@@ -244,10 +243,9 @@ main section > h2 {
     background-color: var(--sage);
 }
 
-.service-card svg {
+.service-card figure img {
     width: 72px;
     height: 72px;
-    color: var(--slate-dark);
 }
 
 .service-card h3,
