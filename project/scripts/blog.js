@@ -16,10 +16,10 @@ function showFiltered() {
     renderCards(list, grid);
 }
 
-// Filtro por categoría
+// Filter by category
 filter.addEventListener('change', showFiltered);
 
-// Clicks delegados en las cards (leer más / guardar)
+// Clicks on the cards ('Read More' or 'Like')
 grid.addEventListener('click', (e) => {
     const readBtn = e.target.closest('.read-more');
     const saveBtn = e.target.closest('.save-btn');

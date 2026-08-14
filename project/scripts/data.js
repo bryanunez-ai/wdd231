@@ -5,7 +5,7 @@ export async function getArticulos() {
         if (!response.ok) throw new Error(`HTTP error: ${response.status}`);
         return await response.json();
     } catch (error) {
-        console.error('No se pudieron cargar los artículos:', error);
+        console.error('Could not load the articles:', error);
         return [];
     }
 }
