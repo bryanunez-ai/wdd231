@@ -1,4 +1,4 @@
-// ----- Fetch de los artículos (JSON local) -----
+// ----- Articles Fetch -----
 export async function getArticulos() {
     try {
         const response = await fetch('data/articulos.json');
